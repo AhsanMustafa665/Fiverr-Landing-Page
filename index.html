@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fiverr - Freelancer Services Marketplace</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    "
+    />
+     <link rel="icon" type="image/x-icon" href="/icons/fav.png">
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+              lora: ["Lora", "serif"],
+              play: ["Playfair Display", "serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        background-color: #ffffff;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .anchor-under:hover {
+        text-decoration: underline;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <header
+    class="w-full h-20 flex justify-center font-roboto absolute z-10 bg-[#01431D] text-white"
+  >
+    <nav class="w-full px-8 h-full flex justify-between items-center">
+      <a href=""><img src="./others/logo.png" alt="" /></a>
+      <ul
+        style="font-size: 16px"
+        class="font-bold flex gap-x-7 cursor-pointer hidden md:flex"
+      >
+        <a href="#About"> <li class="cursor-pointer">Fiverr Business</li></a>
+        <a href="#Movies"><li class="cursor-pointer">Explore</li></a>
+        <a href="#Services"
+          ><li class="cursor-pointer flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-6 mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+              />
+            </svg>
+            English
+          </li></a
+        >
+        <a href="#Services"
+          ><li class="cursor-pointer">
+            <i class="fa-sharp fa-solid fa-dollar-sign mr-2"></i>USD
+          </li></a
+        >
+        <a href="#Services"><li class="cursor-pointer">Become a seller</li></a>
+        <a href="#Sign"><li class="cursor-pointer">Sign in</li></a>
+        <button
+          class="outline outline-offset-2 outline-1 outline-white rounded px-4 hover:bg-white transition-all hover:text-black mr-3 cursor-pointer"
+        >
+          Join
+        </button>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- BannerSwiperStart -->
+    <div class="swiper mySwiperBanner relative z-0">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="bg-[#00401D] md:bg-[url('./others/banner1.png')] lg:bg-[url('./others/banner1.png')] w-full h-full bg-cover bg-center sm:overflow-hidden"
+          >
+            <p class="text-xl text-white absolute bottom-4 right-10">
+              Anderea, Fashion Designer
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="bg-[#00401D] md:bg-[url('./others/banner2.png')] lg:bg-[url('./others/banner2.png')] w-full h-full bg-cover bg-center"
+          >
+            <p class="text-xl text-white absolute bottom-4 right-10">
+              Moon, Marketing Expert
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="bg-[#00401D] md:bg-[url('./others/banner3.png')] lg:bg-[url('./others/banner3.png')] w-full h-full bg-cover bg-center"
+          >
+            <p class="text-xl text-white absolute bottom-4 right-10">
+              Ritika, Shoemaker and Designer
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="bg-[#00401D] md:bg-[url('./others/banner4.png')] lg:bg-[url('./others/banner4.png')] w-full h-full bg-cover bg-center"
+          >
+            <p class="text-xl text-white absolute bottom-4 right-10">
+              Zach, Bar Owner
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="bg-[#00401D] md:bg-[url('./others/banner5.png')] lg:bg-[url('./others/banner5.png')] w-full h-full bg-cover bg-center"
+          >
+            <p class="text-xl text-white absolute bottom-4 right-10">
+              Gabriellie, Video Editor
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-36 p-10 font-roboto font-semibold">
+      <div class="sm:w-52 sm:h-20 md:w-[517px] h-[107px]">
+        <h2 class="text-white text-4xl">
+          Find the perfect
+          <span class="font-play">freelance</span> services for your business
+        </h2>
+        <div class="input-group my-7">
+          <input
+            type="text"
+            class="form-control"
+            placeholder='🔍 Try "Building mobile app"'
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="bg-green-500 px-6 py-3 text-[16px] text-white rounded-r-lg"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+        <div class="flex flex-wrap text-white">
+          <p class="mr-3">Popular:</p>
+         <a href="https://www.fiverr.com/categories/graphics-design/website-design?source=hplo_search_tag&pos=1&name=website-design">
+          <p
+          class="outline outline-offset-2 outline-1 outline-white rounded-pill px-2 hover:bg-white transition-all hover:text-black mr-3 cursor-pointer"
+        >
+          Website Design
+        </p>
+         </a>
+          <a href="https://www.fiverr.com/categories/programming-tech/website-development/wordpress-development?source=hplo_search_tag">
+            <p
+            class="outline outline-offset-2 outline-1 outline-white rounded-pill px-2 hover:bg-white transition-all hover:text-black mr-3 cursor-pointer"
+          >
+            WordPress
+          </p>
+          </a>
+          <a href="https://www.fiverr.com/categories/graphics-design/creative-logo-design?source=hplo_search_tag&pos=3&name=creative-logo-design">
+            <p
+            class="outline outline-offset-2 outline-1 outline-white rounded-pill px-2 hover:bg-white transition-all hover:text-black mr-3 cursor-pointer"
+          >
+            Logo Design
+          </p>
+          </a>
+          <a href="https://www.fiverr.com/categories/video-animation/video-editing?source=hplo_search_tag&pos=4&name=video-editing">
+            <p
+            class="outline outline-offset-2 outline-1 outline-white rounded-pill px-2 hover:bg-white transition-all hover:text-black mr-3 cursor-pointer"
+          >
+            Video Editing
+          </p>
+          </a>
+        </div>
+      </div>
+    </div>
+<!-- BannerSwiperEnd -->
+    <!-- social-media -->
+    <section>
+      <div class="flex flex-wrap justify-center items-center pt-7 pb-28">
+        <h1 class="font-roboto font-bold text-[16px] text-muted">
+          Trusted by:
+        </h1>
+        <img class="px-12" src="./social-medias/1..png" alt="" />
+        <img class="pr-12" src="./social-medias/2.png" alt="" />
+        <img class="pr-12" src="./social-medias/3.png" alt="" />
+        <img src="./social-medias/4.png" alt="" />
+        <img class="px-12" src="./social-medias/5.png" alt="" />
+      </div>
+    </section>
+
+    <!-- popular services -->
+    <section class="p-10">
+      <div>
+        <h1 class="font-roboto text-3xl font-bold mb-3">
+          Popular professional services
+        </h1>
+      </div>
+
+      <!-- Popular-Swiper -->
+      <div class="swiper mySwiperPopular">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide bg-[url('./images/1.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">Build your brand</h2>
+              <h2 class="text-xl font-bold font-roboto">Logo Design</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/2.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Customize your site
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">WordPress</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/3.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Share your message
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">Voice Over</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/4.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Engage your audience
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">Video Explaner</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/5.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Reach more customers
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">Social Media</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/6.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Unlock growth online
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">SEO</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/7.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Colors your dreams
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">Illustration</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/8.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">Go Global</h2>
+              <h2 class="text-xl font-bold font-roboto">Translation</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/9.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Learns your business
+              </h2>
+              <h2 class="text-xl font-bold font-roboto">Data Entry</h2>
+            </div>
+          </div>
+          <div
+            class="swiper-slide bg-[url('./images/10.png')] bg-cover bg-center w-[275px] h-[345px] relative rounded-lg"
+          >
+            <div class="text-white absolute top-3 text-center">
+              <h2 class="text-[14px] font-lora font-bold">
+                Showcase your stroy
+              </h2>
+              <h2 class="text-2xl font-bold font-roboto">Book Covers</h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next text-xl bg-white rounded-circle p-8 text-muted absolute top-40"
+        ></div>
+        <div
+          class="swiper-button-prev bg-white rounded-circle p-8 text-muted absolute top-40"
+        ></div>
+      </div>
+    </section>
+    <section class="p-10 my-28 overflow-x-hidden bg-[#F1FDF7]">
+      <div class="grid md:grid-cols-2">
+        <div class="font-roboto md:w-[500px]">
+          <h1 class="text-4xl font-bold lh-sm text-gray-700">
+            A whole world of freelance talent at your fingertips
+          </h1>
+          <div class="my-3">
+            <h2 class="mb-2 text-[17px] font-semibold text-gray-900 font-lora">
+              The best for every budget
+            </h2>
+            <p class="text-[17px] font-semibold text-gray-600 font-lora lh-0">
+              <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+              Find high-quality services at every price point. No hourly rates,
+              just project-based pricing.
+            </p>
+          </div>
+          <h2 class="mb-2 text-[17px] font-semibold text-gray-900 font-lora">
+            Quality work done quickly
+          </h2>
+          <p
+            class="text-[17px] font-semibold text-gray-600 font-lora lh-0 mb-3"
+          >
+            <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+            Find the right freelancer to begin working on your project within
+            minutes.
+          </p>
+          <h2 class="mb-2 text-[17px] font-semibold text-gray-900 font-lora">
+            Protected payments, every time
+          </h2>
+          <p
+            class="text-[17px] font-semibold text-gray-600 font-lora lh-0 mb-3"
+          >
+            <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+            Always know what you'll pay upfront. Your payment isn't released
+            until you approve the work.
+          </p>
+          <h2 class="mb-2 text-[17px] font-semibold text-gray-900 font-lora">
+            24/7 support
+          </h2>
+          <p
+            class="text-[17px] font-semibold text-gray-600 font-lora lh-0 pb-10"
+          >
+            <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+            Questions? Our round-the-clock support team is available to help
+            anytime, anywhere.
+          </p>
+        </div>
+        <div class="mt-5">
+          <div href="" class="relative cursor-pointer">
+            <!-- <i
+              class="fa-solid fa-play absolute top-40 left-72 bg-gray-200 rounded-circle p-4 text-2xl"
+            ></i> -->
+            <video
+              width="700"
+              height="450"
+              poster="./others/video&img/VI1.png"
+              controls
+            >
+              <source src="./others/video&img/V1.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-10">
+      <div>
+        <h1 class="font-roboto text-3xl font-bold -mt-14 text-gray-700">
+          Explore the marketplace
+        </h1>
+      </div>
+    </section>
+    <!-- icon-added -->
+    <section class="overflow-x-hidden px-16">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <a href="" class="w-64 h-36 flex flex-col items-center group">
+          <img
+            src="./icons/1.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Graphics & Design</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/2.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Digital Marketing</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/3.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Writing & Translation</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/4.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Video & Animation</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/5.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Music & Audio</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/6.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Programming & Tech</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/7.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Business</h2>
+        </a>
+        <a href="" class="w-64 h-36 flex flex-col items-center">
+          <img
+            src="./icons/8.svg"
+            class="w-12 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="font-lora text-[17px]">Lifestyle</h2>
+        </a>
+        <a href="" class="mt-3 flex flex-col items-center">
+          <img
+            src="./icons/9.svg"
+            class="w-11 mb-1 border-b-2 border-gray-400"
+            alt=""
+          />
+          <h2 class="mt-2 font-lora text-[17px] border-t-2 border-gray-400">
+            Data
+          </h2>
+        </a>
+      </div>
+    </section>
+    <section class="p-10 my-28 overflow-x-hidden bg-[#0D084D]">
+      <div class="flex">
+        <img src="./others/logo.png" class="-mt-2" alt="" />
+        <h2 class="text-4xl text-white">business</h2>
+      </div>
+      <button
+        class="bg-indigo-500 text-white rounded-pill px-2 mb-10 font-semibold text-[10px]"
+      >
+        NEW
+      </button>
+      <div class="grid md:grid-cols-2">
+        <div class="font-roboto md:w-[500px]">
+          <h1 class="text-4xl font-bold lh-sm text-white w-[400px]">
+            A business solution designed for
+            <span class="font-play font-thin">teams</span>
+          </h1>
+          <div class="my-3">
+            <h2 class="my-4 text-[17px] font-semibold text-white font-lora">
+              Upgrade to a curated experience packed with tools and benefits,
+              dedicated to businesses
+            </h2>
+            <p class="text-[17px] font-semibold text-white font-lora mb-3">
+              <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+              Connect to freelancers with proven business experience
+            </p>
+            <p class="text-[17px] font-semibold text-white font-lora mb-3">
+              <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+              Get matched with the perfect talent by a customer success manager
+            </p>
+            <p class="text-[17px] font-semibold text-white font-lora">
+              <i class="fa-regular fa-circle-check text-xl mr-1"></i>
+              Manage teamwork and boost productivity with one powerful workspace
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="mt-10 md:mt-5 lg:-mt-24"
+            src="./others/fiverr-business.png"
+            alt=""
+          />
+        </div>
+        <button
+          class="bg-green-500 px-6 py-2 text-[16px] text-white rounded-lg font-bold w-60 mt-8"
+          type="button"
+          id="button-addon2"
+        >
+          Explore Fiverr Business
+        </button>
+      </div>
+    </section>
+    <!-- video & text -->
+    <section>
+      <!-- Swiper -->
+      <div class="swiper mySwiperVideo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="mt-5 flex flex-wrap items-center">
+              <div href="" class="relative cursor-pointer">
+                <video
+                  class="md:ml-32 lg:-ml-6 rounded-lg"
+                  width="490"
+                  height="250"
+                  poster="./others/video&img/VI2.png"
+                  controls
+                >
+                  <source src="./others/video&img/V2.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                </video>
+              </div>
+              <div class="text-left ps-5">
+                <h2 class="text-muted lg:text-2xl mb-3 flex flex-wrap mt-5">
+                  Caitlin Tormey, Chief Commercial Officer
+                  <span class="mx-3 font-thin text-gray-400">|</span>
+                  <img
+                    class="flex"
+                    src="./others/video&img/publisher1.png"
+                    style="width: 93px; height: 36px"
+                    alt=""
+                  />
+                </h2>
+                <h2
+                  class="font-play font-thin lg:text-3xl lg:w-[656px] text-[#003912] lh-base"
+                >
+                  "We've used Fiverr for Shopify web development, graphic
+                  design, and backend web development. Working with Fiverr makes
+                  my job a little easier every day."
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mt-5 flex flex-wrap items-center">
+              <div href="" class="relative cursor-pointer">
+                <video
+                  class="md:ml-32 lg:-ml-6 rounded-lg"
+                  width="490"
+                  height="250"
+                  poster="./others/video&img/VI4.png"
+                  controls
+                >
+                  <source src="./others/video&img/V3.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                </video>
+              </div>
+              <div class="text-left ps-5">
+                <h2 class="text-muted lg:text-2xl mb-3 flex flex-wrap mt-5">
+                  Brighid Gannon (DNP, PMHNP-BC), Co-Founder
+                  <span class="mx-3 font-thin text-gray-400">|</span>
+                  <img
+                    class="flex"
+                    src="./others/video&img/publisher2.png"
+                    style="width: 93px; height: 36px"
+                    alt=""
+                  />
+                </h2>
+                <h2
+                  class="font-play font-thin lg:text-3xl lg:w-[656px] text-[#003912] lh-base"
+                >
+                  "We used Fiverr for SEO, our logo, website, copy, animated
+                  videos — literally everything. It was like working with a
+                  human right next to you versus being across the world."
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mt-5 flex flex-wrap items-center">
+              <div href="" class="relative cursor-pointer">
+                <video
+                  class="md:ml-32 lg:-ml-6 rounded-lg"
+                  width="490"
+                  height="250"
+                  poster="./others/video&img/VI3.png"
+                  controls
+                >
+                  <source src="./others/video&img/V5.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                </video>
+              </div>
+              <div class="text-left ps-5">
+                <h2 class="text-muted lg:text-2xl mb-3 flex flex-wrap mt-5">
+                  Tim and Dan Joo, Co-Founders
+                  <span class="mx-3 font-thin text-gray-400">|</span>
+                  <img
+                    class="flex"
+                    src="./others/video&img/publisher3.png"
+                    style="width: 93px; height: 36px"
+                    alt=""
+                  />
+                </h2>
+                <h2
+                  class="font-play font-thin lg:text-3xl lg:w-[656px] text-[#003912] lh-base"
+                >
+                  "When you want to create a business bigger than yourself, you
+                  need a lot of help. That's what Fiverr does."
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mt-5 flex flex-wrap items-center">
+              <div href="" class="relative cursor-pointer">
+                <video
+                  class="md:ml-32 lg:-ml-6 rounded-lg"
+                  width="490"
+                  height="250"
+                  poster="./others/video&img/VI5.png"
+                  controls
+                >
+                  <source src="./others/video&img/V4.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                </video>
+              </div>
+              <div class="text-left ps-5">
+                <h2 class="text-muted lg:text-2xl mb-3 flex flex-wrap mt-5">
+                  Kay Kim, Co-Founder
+                  <span class="mx-3 font-thin text-gray-400">|</span>
+                  <img
+                    class="flex"
+                    src="./others/video&img/publisher4.png"
+                    style="width: 93px; height: 36px"
+                    alt=""
+                  />
+                </h2>
+                <h2
+                  class="font-play font-thin lg:text-3xl lg:w-[656px] text-[#003912] lh-base"
+                >
+                  "It's extremely exciting that Fiverr has freelancers from all
+                  over the world — it broadens the talent pool. One of the best
+                  things about Fiverr is that while we're sleeping, someone's
+                  working."
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+   <section class=" lg:px-16 py-10 my-28 overflow-x-hidden bg-[#446EE7] flex m-10 h-80 overflow-y-hidden lg:bg-[url('./others/logo-maker-banner-wide-desktop-1352-2x.webp')]">
+      <div>
+      <div>
+        <div class="flex">
+          <img src="./others/logo.png" class="-mt-2" alt="" />
+          <h2 class="text-3xl font-lora text-white">logo maker.</h2>
+        </div>
+          <div class="font-roboto md:w-[500px] text-white">
+            <h1 class="text-4xl font-bold lh-sm text-white w-[400px] my-3">
+              Make an incredible logo
+              <span class="font-play font-thin">in minutes</span>
+            </h1>
+            <p class="text-[17px]">Pre-designed by top talent. Just add your touch.</p>
+            <button
+          class="bg-gray-100  text-[#446EE7] px-6 py-2 text-[16px] rounded-lg font-bold w-60 mt-3"
+          type="button"
+          id="button-addon2"
+        >
+          Try Fiverr Logo Maker
+        </button>
+      </div>
+    </section>
+  <section class="px-10 py-32 bg-[#F5F5F5]">
+    <div class="flex justify-between items-center">
+      <h1 class="font-roboto text-xl lg:text-3xl font-bold -mt-14 text-gray-700 pb-6">
+        Get inspired with projects made by our freelancers
+      </h1>
+     <a href=""> <p class="text-indigo-700 text-[18px] font-thin font-roboto -mt-14">See More Projects <i class="fa-solid fa-arrow-right-long"></i></p></a>
+    </div>
+    <div class="swiper mySwiperProjects">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/1.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/1.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Packaging Design</p>
+                <p class="font-roboto font-thin text-muted -ml-14">by Jacklin</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/2.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/2.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Logo Design</p>
+                <p class="font-roboto font-thin text-muted -ml-5 ">by Evalian</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/3.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/3.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Book Design</p>
+                <p class="font-roboto font-thin text-muted -ml-5 ">by Franm</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/4.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/8.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Fly Design</p>
+                <p class="font-roboto font-thin text-muted -ml-5 ">by Dina</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/5.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/5.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Website Design</p>
+                <p class="font-roboto font-thin text-muted -ml-12 ">by Suny</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/6.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle" src="./images/people/6.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Portraits and Caricaturies</p>
+                <p class="font-roboto font-thin text-muted -ml-24 ">by Noyean</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/7.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/7.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Product Photography</p>
+                <p class="font-roboto font-thin text-muted -ml-20 ">by Enaira</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/8.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/8.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Social Media Design</p>
+                <p class="font-roboto font-thin text-muted -ml-16">by Jammy</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/9.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/9.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Logo Design</p>
+                <p class="font-roboto font-thin text-muted -ml-5 ">by Evalian</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/10.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/10.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Animatted GIFs</p>
+                <p class="font-roboto font-thin text-muted -ml-10 ">by Anann</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col border border-gray-700 w-full p-3">
+          <img src="./projects/11.png" alt="">
+          <div class="flex items-center w-full mt-3">
+              <div class="">
+              <img class="rounded-circle " src="./images/people/11.webp" alt="">
+              </div>
+              <div class="ml-2 text-[14px]">
+                <p class="font-lora font-bold">Illustration</p>
+                <p class="font-roboto font-thin text-muted -ml-5 ">by Marry</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Fiverr-guide -->
+     <section class="px-10 py-32">
+    <div class="flex justify-between items-center">
+      <h1 class="font-roboto text-xl lg:text-3xl font-bold -mt-14 text-gray-700 pb-6">
+        Fiverr <span class="font-lora">guides</span>
+      </h1>
+     <a href=""> <p class="text-indigo-700 text-[18px] font-thin font-roboto -mt-14">See More Guides <i class="fa-solid fa-arrow-right-long"></i></p></a>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10">
+      <div>
+        <img src="./others/Fiverr-guides1.png" alt="">
+      <h2 class="font-bold font-roboto mt-2 text-[18px]">Start an online business and work from home</h2>
+      <p class="text-muted font-semibold text-[15px]">A complete guide to starting a small business online</p>
+      </div>
+      <div>
+        <img src="./others/Fiverr-guides2.png" alt="">
+      <h2 class="font-bold font-roboto mt-2 text-[18px]">Digital marketing made easy</h2>
+      <p class="text-muted font-semibold text-[15px]">A practical guide to understand what is digital marketing</p>
+      </div>
+      <div>
+        <img src="./others/Fiverr-guides3.png" alt="">
+      <h2 class="font-bold font-roboto mt-2 text-[18px]">Create a logo for your business</h2>
+      <p class="text-muted font-semibold text-[15px]">A step-by-step guide to create a memorable business logo</p>
+      </div>
+    </div>
+  </section>
+     <section class="px-14 py-10 lg:px-28 lg:py-20  overflow-x-hidden bg-[#460A1B] md:bg-[#460A1B] lg:bg-[url('./others/bg-signup-1400-x1.webp')] bg-cover bg-center m-10 lg:h-96 overflow-y-hidden ">
+      <div>
+        <h2 class="text-white text-2xl md:text-3xl lg:text-5xl font-semibold mt-7 lg:w-[600px]">Find the <span class="font-play font-thin"> talent </span>needed to <span class="font-play">get</span> your business <span class="font-play font-thin"> growing.</span></h2>
+            <button
+          class="bg-green-500 text-white px-4 py-2 text-[16px] rounded-lg font-bold mt-16"
+          type="button"
+          id="button-addon2"
+        >
+          Get started
+        </button>
+      </div>
+    </section>
+    <!-- footer -->
+     <section class="grid md:grid-cols-3 lg:grid-cols-5 gap-y-10 border-t border-gray-200 mt-24 px-10 py-16">
+      <div class="ml-36 lg:ml-0">
+        <h2 class="text-[16px] font-lora text-gray-900 font-semibold">Categories</h2>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Graphics & Design</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Digital Marketing</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Writing & Translation</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Video & Animation</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Music & Audio</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Programming & Tech</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Data</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Business</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Lifestyle</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Photography</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Sitemap</a> 
+      </div>
+      <div class="ml-36 lg:ml-0">
+        <h2 class="text-[16px] font-lora text-gray-900 font-semibold">About</h2>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Careers</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Press & News</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Partnerships</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Privacy Policy</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Terms of Service</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Intellectual Property Claims</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Investor Relations</a>
+      </div>
+      <div class="ml-36 lg:ml-0">
+        <h2 class="text-[16px] font-lora text-gray-900 font-semibold">Support</h2>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Help & Support</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Trust & Safety</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Selling on Fiverr</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Buying on Fiverr</a>
+      </div>
+      <div class="ml-36 lg:ml-0">
+        <h2 class="text-[16px] font-lora text-gray-900 font-semibold">Community</h2>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Events</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Blog</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Forum</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Community Standards</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Podcast</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Influencers</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Affiliates</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Invite a Friend</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Become a Seller</a> 
+      </div>
+      <div class="ml-36 lg:ml-0">
+        <h2 class="text-[16px] font-lora text-gray-900 font-semibold">More From Fiverr</h2>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Business</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Pro</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Studios</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Logo Maker</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Guides</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Get Inspired</a> 
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Fiverr Select</a> 
+        <div class="anchor-under">
+          <a class="block text-[16px] mt-3 text-gray-500" href=""
+        >ClearVoice <a class="text-xxl text-gray-400" href="">Content Marketing</a></a> 
+        </div>
+        <div class="anchor-under">
+          <a class="block text-[16px] mt-3 text-gray-500" href=""
+        >Fiverr Workspace <a class="text-xxl text-gray-400" href="">Invoice Software</a></a> 
+        </div>
+        <div class="anchor-under">
+          <a class="block text-[16px] mt-3 text-gray-500" href=""
+        >Learn <a class="text-xxl text-gray-400" href="">Online Courses</a></a> 
+        </div>
+        <a class="anchor-under block text-[16px] mt-3 text-gray-500" href="">Working Not Working</a> 
+      </div>
+    </section>
+   <section class="p-10 border-t border-gray-200 flex justify-between flex-wrap sm:w-10 lg:w-full ">
+     <div class="flex items-center">
+      <img src="./others/logo2.png" class="
+      ml-52 lg:ml-0" alt="">
+      <p class= "text-gray-400 font-semibold font-roboto">© Fiverr International Ltd. 2023</p>
+     </div>
+     <div>
+      <div class="text-gray-500 lg:w-full">
+        <i class="fa-brands fa-twitter text-xl relative p-2 hover:bg-slate-300 rounded-circle hover:p-2"></i>
+        <i class="fa-brands fa-facebook text-xl mx-4 relative p-2 hover:bg-slate-300 rounded-circle hover:p-2"></i>
+        <i class="fa-brands fa-linkedin text-xl relative p-2 hover:bg-slate-300 rounded-circle hover:p-2"></i>
+        <i class="fa-brands fa-pinterest text-xl mx-4 relative p-2 hover:bg-slate-300 rounded-circle hover:p-2"></i>
+        <i class="fa-brands fa-instagram text-xl relative p-2 hover:bg-slate-300 rounded-circle hover:p-2"></i>
+        <p class="inline mx-12 font-semibold text-black hover:bg-slate-200 p-2 rounded-pill"> <img src="./icons/global.png" class="w-4 inline" alt="">
+        English</p>
+        <p class="inline mr-8 font-semibold text-black hover:bg-slate-200 p-2 rounded-pill"><i class="fa-solid fa-dollar-sign inline"></i>USD</p> 
+        <img src="./icons/accessibility.png" class="w-7 inline border-2 p-1 border-black rounded-circle hover:border-0 hover:p-1" alt="">
+       </div>
+     </div>
+    </section> 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiperBanner", {
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2200,
+          disableOnInteraction: false,
+        },
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiperPopular", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          412: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiperProjects", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiperVideo", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- font icon -->
+    <script
+      src="https://kit.fontawesome.com/bd93403ffd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
